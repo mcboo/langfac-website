@@ -1,0 +1,511 @@
+/* add font-face for font derivatives. remember to delete the unneeded ones later */
+
+@font-face {
+  font-family: Amaranth;
+  src: url(../fonts/amaranth/Amaranth-Regular.ttf);
+}
+
+@font-face {
+  font-family: Titillium Web;
+  src: url(../fonts/titilliumweb/TitilliumWeb-Regular.ttf);
+}
+
+html, body {
+  margin: 0;
+  font-family: Titillium Web;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Amaranth;
+  font-size: 50px;
+}
+
+/* navigation bar */
+nav {
+  padding:0px;
+	float: left;
+}
+
+nav ul {
+  list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+  position: relative;
+  margin: 0px 15px;
+}
+
+/* styling navbar */
+nav a {
+  color: #FFF;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 75px;
+}
+
+nav a:hover {
+  color: #FF9;
+}
+
+nav li ul {
+  position: absolute;
+  left: 0;
+  top: 75px;
+  width: inherit;
+}
+
+#navbar {
+	background-color: #2C2E31;
+  opacity: 0.7;
+	width: 100%;
+	height: 75px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#navcontent {
+  float: right;
+  margin-right: 10%
+}
+
+.logo {
+  position: relative;
+  float: left;
+  margin-left: 10%;
+  margin-top: 5px;
+}
+
+
+/* dropdown navigation */
+nav li ul {
+  background-color: #2C2E31;
+  position:absolute;
+  left: -20px;
+  top:75px;
+  width:150px;
+}
+
+nav li li {
+  position:relative;
+  margin:0;
+  display:block;
+}
+
+/* styling dropdown navigation */
+nav li li a {
+  margin:0px 20px;
+  padding:0;
+  line-height: 50px;
+}
+
+/* hiding dropdown */
+ul.drop-menu {
+  display: none;
+}
+
+/* styling enroll button */
+#enroll-button {
+  height: 100%;
+  padding: 0px 20px;
+  background-color: #FF9;
+}
+
+#enroll-button a {
+  color: #666;
+}
+
+#enroll-button a:hover {
+  color: #000;
+  font-weight: bolder;
+}
+
+/* fullscreen header */
+#hero {
+  background:
+    linear-gradient(
+      rgba(255,255,153, 0.2),
+      rgba(255,255,153, 0.2)
+    ),
+    url(../img/narrabundah.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* hero text styling */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  color: #2C2E31;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+  -webkit-transform: translate(0,-50%); /* Safari */
+  transform: translate(0,-50%);
+  margin: 0;
+}
+
+.hero-text h1 {
+  font-size: 80px;
+  font-family: Amaranth;
+  line-height: 120%;
+  margin-bottom: 0;
+}
+
+.hero-text h2 {
+  font-size: 30px;
+  margin-top: 0px;
+  font-family: Titillium Web;
+}
+
+a.down:hover  {
+	cursor: crosshair;
+}
+
+/* footer */
+#footer {
+  margin-top: -16px;
+  width: 100%;
+  height: 50px;
+  background-color: #2C2E31;
+}
+
+#footer p {
+  text-align: center;
+  color: #FFF;
+  line-height: 50px;
+}
+
+
+/* index page content */
+#lang {
+	background-color: #FEFEFA;
+	width: 100%;
+	height: 30vh;
+}
+
+
+#lang h1 {
+  margin-top: 15vh;
+  text-align: center;
+}
+
+/* language switcher buttons */
+#lang ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#lang ul li {
+  display: inline-block;
+  margin: 0px;
+  width: 200px;
+  font-size: 20;
+  padding: 10px;
+  background-color: #FFED99;
+}
+
+#lang ul li:hover {
+  cursor: crosshair;
+}
+
+/* reasoning wrapper */
+.reason-cont {
+  width: 100%;
+  height: 500px;
+}
+
+/* reasoning background colors */
+.yel1 {
+  background-color: #FFED99;
+}
+
+.yel2 {
+  background-color: #FFF4BE;
+}
+
+/* reason box styling */
+.reason {
+  width: 70%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+
+.reason h1 {
+  margin: 0 auto;
+  margin-top: 175px;
+  margin-bottom: 20px;
+}
+
+.reason p {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* reason side image sizing */
+.photo {
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+
+/* setting background image + yellow tint */
+.brain {
+  background:
+    linear-gradient(
+      rgba(255,255,153, 0.2),
+      rgba(255,255,153, 0.2)
+    ),
+    url(../img/brain.jpg);
+  background-size: cover;
+}
+
+.travel {
+  background:
+    linear-gradient(
+      rgba(255,255,153, 0.2),
+      rgba(255,255,153, 0.2)
+    ),
+    url(../img/travel.jpg);
+  background-size: cover;
+}
+
+.choice {
+  background:
+    linear-gradient(
+      rgba(255,255,153, 0.2),
+      rgba(255,255,153, 0.2)
+    ),
+    url(../img/choice.jpg);
+  background-size: cover;
+}
+
+.round {
+  border-radius: 50px;
+}
+
+/* page header image */
+#page-headers {
+	margin: 0;
+	width: 100%;
+	height: 70vh;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.fiji {
+  background:
+    linear-gradient(
+      rgba(255,255,153, 0.3),
+      rgba(255,255,153, 0.3)
+    ),
+    url(../img/bg1.jpg);
+}
+
+.mountain-fuji {
+	background:
+    linear-gradient(
+      rgba(255,255,153, 0.3),
+      rgba(255,255,153, 0.3)
+    ),
+    url(../img/bg2.jpg);
+}
+
+.china {
+	background:
+    linear-gradient(
+      rgba(255,255,153, 0.3),
+      rgba(255,255,153, 0.3)
+    ),
+    url(../img/bg3.jpg);
+}
+
+.greece {
+  background:
+    linear-gradient(
+      rgba(255,255,153, 0.3),
+      rgba(255,255,153, 0.3)
+    ),
+    url(../img/bg4.jpg);
+}
+
+.greece2 {
+  background:
+    linear-gradient(
+      rgba(255,255,153, 0.3),
+      rgba(255,255,153, 0.3)
+    ),
+    url(../img/bg5.jpg);
+}
+
+/* information page styling */
+.page-container {
+  padding: 0 300px;
+  margin-bottom: 64px;
+  margin-top: 0px;
+}
+
+.page-container h1 {
+  text-align: center;
+}
+
+.page-container img {
+  display: block;
+  margin: 0 auto;
+}
+
+.img-container {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.tog-btn {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  background-color: #FF9;
+  margin-bottom: 30px;
+  border: none;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.tog-btn:hover {
+  cursor: crosshair;
+}
+
+
+/* faculty text styling */
+span h3 {
+  margin: 5px;
+  text-align: center;
+}
+span h4 {
+  margin: 5px;
+  text-align: center;
+}
+
+/* equipment text styles */
+#equip {
+  position: relative;
+}
+
+/* positioning iframe */
+#contact {
+  text-align: center;
+}
+
+iframe {
+  margin: 10px 0 30px 0;
+}
+
+/* contact text styles */
+#contact p {
+  margin: 0;
+}
+
+#contact h2 {
+  margin-bottom: 0;
+}
+
+/* about coder styling */
+#coder {
+  width: 610px;
+  margin: 0 auto;
+}
+
+.profile {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 50px
+}
+
+#more {
+  display: none;
+}
+
+#more p {
+  text-align: justify;
+}
+
+/* form styling */
+form {
+  width: 500px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+#enroll {
+  text-align: center;
+}
+
+input[type="text"],
+#course {
+  font-family: Titillium Web;
+  font-size: 15px;
+  padding: 10px 10px;
+  line-height: 10px;
+}
+
+.ui-dialog-buttonset{
+    float: none !important;
+    margin: 0 auto;
+    width: 205px;
+}
+
+.ui-widget {
+  font-family: Titillium Web;
+  font-size: 15px;
+}
+
+.ui-widget label {
+  font-size: 20px;
+}
+
+/* general classes */
+.center {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.green {
+  color: #7FA631;
+}
+
+.brown {
+  color: #B29D35;
+}
